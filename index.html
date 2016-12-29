@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<!-- Features 'Responsive Navigation Menu' by ishwarkatwe at Bootsnipp.com -->
+		<!-- Features 'Stylish Search Box' by dotstrap at Bootsnipp.com -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/styles.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+		<title>A New World</title>
+	</head>
+	<body>
+		<div id="textWindow">
+			<div id="innerTextWindow">
+				<p id="textBox" data-bind="text: messageText"></p>
+				<div id="advButContainer">
+					<button id="advanceButton" data-bind="click: advance">More...</button>
+				</div>
+			</div>
+		</div>
+		<div id="actionWindow">
+		<div id="actions" data-bind="if: introOver">
+		<span>Rocks: </span>
+		<span data-bind="text: rock"></span>
+		<span>Wood: </span>
+		<span data-bind="text: wood"></span>
+		</br>
+		<button id="rock" data-bind="click: moreRock">Dig for Rocks</button>
+		<button id="wood" data-bind="click: moreWood">Gather Wood</button>
+		<button id="boxButton" data-bind="click: openBox">Try to Open the Box</button>
+		</div>
+		</div>
+	</body>
+	<!-- Loads the scripts for jQuery, the Google Maps API, Oauth processing, Knockout, and the main javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/knockout-3.3.0.js"></script>
+	<script src="js/main.js"></script>
+</html>

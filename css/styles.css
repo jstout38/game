@@ -1,0 +1,27 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+#textWindow {
+	height: 50%;
+	width: 50%;
+	margin: auto;
+}
+
+#textBox {
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+	font-size: 20;
+}
+
+#advButContainer {
+	text-align: center;
+}
+
+#innerTextWindow {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
